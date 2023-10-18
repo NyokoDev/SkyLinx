@@ -17,7 +17,10 @@
         <a href="support.html">Support</a>
         <div class="image-container">
             <div class="skylinx-image">
-           
+                <div class="search-bar">
+                    <input type="text" id="modSearch" placeholder="Search for mods...">
+                </div>
+
             </div>
         </div>
     </div>
@@ -626,7 +629,43 @@
         </tr>
 
     </table>
+
+    <a id="noResultsLabel" href="https://discord.gg/GqGbeUD8Dg" style="display: none; color: red; text-decoration: none; cursor: pointer;">No results found. Request this mod?</a>
     <p>This website is hosted by Nyoko with the assistance of Chamëleon TBN.</p>
     <a href="https://discord.gg/GqGbeUD8Dg" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 10px;">Support</a>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modSearchInput = document.getElementById("modSearch");
+            const modNames = Array.from(document.querySelectorAll("table tr td:first-child"));
+            const noResultsLabel = document.getElementById("noResultsLabel");
+
+            modSearchInput.addEventListener("input", function () {
+                const searchTerm = modSearchInput.value.toLowerCase();
+                let anyMatch = false;
+
+                modNames.forEach(function (modName) {
+                    const modNameText = modName.textContent.toLowerCase();
+                    const row = modName.parentElement;
+                    if (modNameText.includes(searchTerm)) {
+                        row.style.display = "table-row";
+                        anyMatch = true;
+                    } else {
+                        row.style.display = "none";
+                    }
+                });
+
+                if (!anyMatch) {
+                    noResultsLabel.style.display = "block";
+                } else {
+                    noResultsLabel.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+
 </body>
 </html>

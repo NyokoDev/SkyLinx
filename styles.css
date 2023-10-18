@@ -105,3 +105,22 @@ h1, h2 {
             background-color: #ddd;
             color: black;
         }
+
+
+/* Style for the search bar */
+.search-bar {
+    margin: 10px;
+}
+
+/* Style for the search input */
+#modSearch {
+    padding: 5px;
+    width: 200px;
+    position: fixed;
+    left: -300px; /* Adjust this value to move it to the desired position */
+    background-color: lightgrey; /* Set the background color to light grey */
+    border: 2px solid #ccc; /* Increase the border width to 2px */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
