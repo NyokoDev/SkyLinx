@@ -9,678 +9,611 @@
     <meta property="og:url" content="https://skylinx.onrender.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="icon" href="https://i.imgur.com/Nbbu7Hl.png" type="image/png">
-    <style>
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        h1, h2 {
-            font-weight: bold;
-        }
-        .container {
-            position: fixed;
-            top: 0;
-            right: 0;
-        }
-
-        .icon {
-            width: 50px;
-            height: 50px;
-            background-image: url("https://i.imgur.com/Nbbu7Hl.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            cursor: pointer;
-        }
-        .download-button {
-            width: 150px; /* Adjust the width as needed */
-            background-color: #4CAF50; /* Green */
-            color: white;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        }
-
-
-        .discord-button {
-            width: 150px; /* Adjust the width as needed */
-            background-color: #3498db; /* Blue */
-            color: white;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        }
-
-
-
-        .dependency-button {
-            width: 150px;
-            background-color: #FF8C00; /* Orange */
-            color: black;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-        }
-
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-            .navbar a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                .navbar a:hover {
-                    background-color: #ddd;
-                    color: black;
-                }
-
-    </style>
-    <body>
-        <div class="navbar">
-            <a href="index.html">Mods</a>
-            <a href="support.html">Support</a>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Mods</a>
+        <a href="support.html">Support</a>
+        <div class="image-container">
+            <div class="skylinx-image">
+           
+            </div>
         </div>
-        <h1>SkyLinx - C:S Mods for Epic Games</h1>
-        <h3>Last Edit: 17.10.2023</h3>
-        <p><h2>Normal procedure:</h2> Extract the releases from the GitHub Links into Addons/Mods in Cities Skylines' AppData folder.</p>
-        <h2>Problems?</h2>
-        <p>If you're experiencing difficulties getting the above to work, head to my discord server for support: <a href="https://discord.gg/GqGbeUD8Dg">https://discord.gg/GqGbeUD8Dg</a></p>
-        <p>This website is hosted by Nyoko with the assistance of Chamëleon TBN.</p>
-        <p>SkyLinx might not contain all mods, if you're looking for a particular mod make sure to join the discord server below for requests and more.</p>
-        <a href="https://discord.gg/GqGbeUD8Dg">Request a mod</a>
+    </div>
 
-        <h2>Algernon Mods</h2>
-        <p>For anything algernon (Loading Screen Mod Revisited and more), you must obtain the 'Epic' role there. You can get the releases from the algernon's mods discord: <a href="https://discord.gg/WEyYtxb88K">https://discord.gg/WEyYtxb88K</a></p>
-        <p>What does 'Recompiled' mean? The mod was recompiled because the author was unreachable. All recompiled versions were tested.</p>
 
-        <div class="container">
 
-            <div class="icon"></div>
-        </div>
+    <h1>SkyLinx - C:S Mods for Epic Games</h1>
 
-        <table>
-            <tr>
-                <th>Mod Name</th>
-                <th>Download Link</th>
-                <th>Version</th>
-                <th>Notes</th>
-                <th>Hard Dependencies</th>
-            </tr>
-            <tr>
-                <td>[WILL BE DEPRECATED] UnifiedUI (UUI) 2.2</td>
-                <td>
-                    <form method="get" action="https://github.com/kianzarrin/UnifiedUI/releases/tag/V2.2.12">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>2.2.12</td>
-                <td>Might not function correctly detecting other mods in EPIC GAMES.</td>
-                <td>None
-                <td>
-            </tr>
-            <tr>
-                <td>81 Tiles 2</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.0.3</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
 
-            <tr>
-                <td>ACME</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>0.6.5</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Adaptive Networks (AN) V3.18 (STABLE)</td>
 
-                <td>
-                    <form method="get" action="https://github.com/kianzarrin/AdaptiveNetworks/releases/tag/V3.16.18">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>3.18</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                    <form method="get" action="https://github.com/CitiesSkylinesMods/TMPE/releases/tag/11.8.0.0?">
-                        <button class="dependency-button" type="submit">TMPE: Traffic Manager President Edition</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Advanced Building Level Control</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>Latest</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
 
-            </tr>
-            <tr>
-                <td>All Lumina Styles for EPIC.</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/Lumina/releases/tag/Style">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>Latest</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/Lumina/releases?">
-                        <button class="dependency-button" type="submit">Lumina</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>BOB, the tree and prop replacer</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>0.9.9.2</td>
-                <td>ATTENTION! You need to move the two .crp files into your local asset folder.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Building Spawn Points</td>
-                <td>
-                    <form method="get" action="https://github.com/MacSergey/BuildingSpawnPoints/releases/tag/v1.4.1.1">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.4.1.1</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Demand Controller</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/DemandController">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>Latest (Recompiled)</td>
-                <td>Normal procedure. The mod was recompiled because the author was unreachable.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Enlighten Your Mouse</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.3</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Extra Landscaping Tools</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/Skylines-ExtraLandscapingTools">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>Latest (Recompiled)</td>
-                <td>Normal procedure. The mod was recompiled because the author was unreachable.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Eyecandy X</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/EX/releases/tag/v1.7.1">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.7.1 (Latest)</td>
-                <td>Normal procedure.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Flight Tracker</td>
-                <td>
-                    <form method="get" action="https://github.com/algernon-A/FlightTracker/releases/tag/1.0">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.0 (Latest)</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Find It! 2</td>
-                <td>
-                    <form method="get" action="https://github.com/sway2020/FindIt2/releases/tag/v2.9.4">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>2.9.4</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Game Anarchy</td>
-                <td>
-                    <form method="get" action="https://github.com/Mbyron26/GameAnarchy/releases/tag/V1.1.3">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>v1.1.3</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Garbage Bin Manager</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.1.1</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Harmony 2.x (Mod Dependency.)</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>2.2.2</td>
-                <td>Folder name must be 'CitiesHarmony' else other mods won't be able to detect it on EPIC.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Intersection Marking Tool</td>
-                <td>
-                    <form method="get" action="https://github.com/MacSergey/NodeMarkup/releases/tag/v1.14.3">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.14.3</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Loading Screen Mod Revisited</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.18</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Lumina</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/Lumina/releases">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.2.7</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>LUT Creator</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/Lumina/releases/tag/v1.2">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.2</td>
-                <td>LUT Creator in-game doesn't work in EPIC. Use the executable.</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/Lumina/releases">
-                        <button class="dependency-button" type="submit">Lumina</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Move It!</td>
-                <td>
-                    <form method="get" action="https://github.com/Quboid/CS-MoveIt/releases/tag/v2.10.7">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>2.10.7</td>
-                <td>Normal procedure.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Network Anarchy</td>
-                <td>
-                    <form method="get" action="https://github.com/Quboid/NetworkAnarchy/releases/tag/v3.2.2">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>3.2.2</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Network Multitool</td>
-                <td>
-                    <form method="get" action="https://github.com/MacSergey/NetworkMultitool/releases/tag/v1.3.5.2">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.3.5.2</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            </tr>
-            <tr>
-                <td>No Big Truck</td>
-                <td>
-                    <form method="get" action="https://github.com/MacSergey/NoBigTruck/releases/tag/v1.3.0.6">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.3.0.6</td>
-                <td>Requires AVO (Advanced Vehicle Options) to function.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony</button>
-                    </form>
+    <h3>Last Edit: 17.10.2023</h3>
+    <p><h2>Normal procedure:</h2> Extract the releases from the GitHub Links into Addons/Mods in Cities Skylines' AppData folder.</p>
+    <h2>Problems?</h2>
+    <p>If you're experiencing difficulties getting the above to work, head to my discord server for support: <a href="https://discord.gg/GqGbeUD8Dg">https://discord.gg/GqGbeUD8Dg</a></p>
+    <p>This website is hosted by Nyoko with the assistance of Chamëleon TBN.</p>
+    <p>SkyLinx might not contain all mods, if you're looking for a particular mod make sure to join the discord server below for requests and more.</p>
+    <a href="https://discord.gg/GqGbeUD8Dg">Request a mod</a>
 
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="dependency-button" type="submit">AVO (Advanced Vehicle Options)</button>
-                    </form>
-                </td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Node Controller Renewal</td>
-                <td>
-                    <form method="get" action="https://github.com/MacSergey/NodeController30/releases/tag/v3.5.0.3">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>3.5.0.3</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Patch Loader Mod</td>
-                <td>
-                    <form method="get" action="https://github.com/CitiesSkylinesMods/PatchLoader/releases">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>2.2.0</td>
-                <td>Normal procedure.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Roundabout Builder</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/NullReferenceCatcher/releases/tag/v1.0">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>v1.0</td>
-                <td>Normal procedure.</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Procedural Objects</td>
-                <td>
-                    <form method="get" action="http://proceduralobjects.shoutwiki.com/wiki/Download">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.7.8</td>
-                <td>Please note that the mod is available from the provided website, and you won't find it on GitHub like some of the other mods listed. Procedural Objects also has an empty popup box when you first subscribe, therefore, to fix this it's important to restart the game.'</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Repaint</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.7.3.1</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Skyve (Stable)</td>
-                <td>
-                    <form method="get" action="https://discord.gg/t-d-w-s-village-904287711962222632">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>3.2.0</td>
-                <td>Obtain Skyve and Skyve (Beta) from the official T.D.W's Village Discord.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                    <form method="get" action="https://github.com/CitiesSkylinesMods/PatchLoader/releases">
-                        <button class="dependency-button" type="submit">Patch Loader Mod</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Theme Mixer 2.5</td>
-                <td>
-                    <form method="get" action="https://github.com/NyokoDev/ThemeMixer2.5/releases/tag/v1.14">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>1.14</td>
-                <td>To use all themes in Theme Mixer 2.5 on EPIC, copy all .crp themes from the Theme Mixer folder to the 'Assets' folder located in the "AppData" directory of your Cities: Skylines game installation.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>TMPE: Traffic Manager President Edition</td>
-                <td>
-                    <form method="get" action="https://github.com/CitiesSkylinesMods/TMPE/releases/tag/11.8.0.0">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>11.8.0.0</td>
-                <td>Installation guide: <a href="https://github.com/CitiesSkylinesMods/TMPE/wiki/Installation">https://github.com/CitiesSkylinesMods/TMPE/wiki/Installation</a></td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Transfer Manager (CE)</td>
-                <td>
-                    <form method="get" action="https://github.com/Sleepy334/TransferManagerCE/tree/main/Epic/STABLE/2.3.32">
-                        <button class="download-button" type="submit">Download</button>
-                    </form>
-                </td>
-                <td>v2.3.32</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Unlimited Outside Connections Revisited</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.1</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Vehicle Selector</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.4.3</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Visibility Control</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>0.9.2</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>Zoning Adjuster</td>
-                <td>
-                    <form method="get" action="https://discord.gg/WEyYtxb88K">
-                        <button class="discord-button" type="submit">Discord</button>
-                    </form>
-                </td>
-                <td>1.17</td>
-                <td>Normal procedure.</td>
-                <td>
-                    <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
-                        <button class="dependency-button" type="submit">Harmony 2.x</button>
-                    </form>
-                </td>
-            </tr>
+    <h2>Algernon Mods</h2>
+    <p>For anything algernon (Loading Screen Mod Revisited and more), you must obtain the 'Epic' role there. You can get the releases from the algernon's mods discord: <a href="https://discord.gg/WEyYtxb88K">https://discord.gg/WEyYtxb88K</a></p>
+    <p>What does 'Recompiled' mean? The mod was recompiled because the author was unreachable. All recompiled versions were tested.</p>
 
-        </table>
-        <p>This website is hosted by Nyoko with the assistance of Chamëleon TBN.</p>
-        <a href="https://discord.gg/GqGbeUD8Dg" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 10px;">Support</a>
-    </body>
+
+
+
+    <div class="container">
+
+        <div class="icon"></div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Mod Name</th>
+            <th>Download Link</th>
+            <th>Version</th>
+            <th>Notes</th>
+            <th>Hard Dependencies</th>
+        </tr>
+        <tr>
+            <td>[WILL BE DEPRECATED] UnifiedUI (UUI) 2.2</td>
+            <td>
+                <form method="get" action="https://github.com/kianzarrin/UnifiedUI/releases/tag/V2.2.12">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>2.2.12</td>
+            <td>Might not function correctly detecting other mods in EPIC GAMES.</td>
+            <td>None
+            <td>
+        </tr>
+        <tr>
+            <td>81 Tiles 2</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.0.3</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>ACME</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>0.6.5</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Adaptive Networks (AN) V3.18 (STABLE)</td>
+
+            <td>
+                <form method="get" action="https://github.com/kianzarrin/AdaptiveNetworks/releases/tag/V3.16.18">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>3.18</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+                <form method="get" action="https://github.com/CitiesSkylinesMods/TMPE/releases/tag/11.8.0.0?">
+                    <button class="dependency-button" type="submit">TMPE: Traffic Manager President Edition</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Advanced Building Level Control</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>Latest</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+
+        </tr>
+        <tr>
+            <td>All Lumina Styles for EPIC.</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/Lumina/releases/tag/Style">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>Latest</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/Lumina/releases?">
+                    <button class="dependency-button" type="submit">Lumina</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>BOB, the tree and prop replacer</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>0.9.9.2</td>
+            <td>ATTENTION! You need to move the two .crp files into your local asset folder.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Building Spawn Points</td>
+            <td>
+                <form method="get" action="https://github.com/MacSergey/BuildingSpawnPoints/releases/tag/v1.4.1.1">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.4.1.1</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Demand Controller</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/DemandController">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>Latest (Recompiled)</td>
+            <td>Normal procedure. The mod was recompiled because the author was unreachable.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Enlighten Your Mouse</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.3</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Extra Landscaping Tools</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/Skylines-ExtraLandscapingTools">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>Latest (Recompiled)</td>
+            <td>Normal procedure. The mod was recompiled because the author was unreachable.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Eyecandy X</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/EX/releases/tag/v1.7.1">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.7.1 (Latest)</td>
+            <td>Normal procedure.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Flight Tracker</td>
+            <td>
+                <form method="get" action="https://github.com/algernon-A/FlightTracker/releases/tag/1.0">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.0 (Latest)</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Find It! 2</td>
+            <td>
+                <form method="get" action="https://github.com/sway2020/FindIt2/releases/tag/v2.9.4">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>2.9.4</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Game Anarchy</td>
+            <td>
+                <form method="get" action="https://github.com/Mbyron26/GameAnarchy/releases/tag/V1.1.3">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>v1.1.3</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Garbage Bin Manager</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.1.1</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Harmony 2.x (Mod Dependency.)</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>2.2.2</td>
+            <td>Folder name must be 'CitiesHarmony' else other mods won't be able to detect it on EPIC.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Intersection Marking Tool</td>
+            <td>
+                <form method="get" action="https://github.com/MacSergey/NodeMarkup/releases/tag/v1.14.3">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.14.3</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Loading Screen Mod Revisited</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.18</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Lumina</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/Lumina/releases">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.2.7</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>LUT Creator</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/Lumina/releases/tag/v1.2">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.2</td>
+            <td>LUT Creator in-game doesn't work in EPIC. Use the executable.</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/Lumina/releases">
+                    <button class="dependency-button" type="submit">Lumina</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Move It!</td>
+            <td>
+                <form method="get" action="https://github.com/Quboid/CS-MoveIt/releases/tag/v2.10.7">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>2.10.7</td>
+            <td>Normal procedure.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Network Anarchy</td>
+            <td>
+                <form method="get" action="https://github.com/Quboid/NetworkAnarchy/releases/tag/v3.2.2">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>3.2.2</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Network Multitool</td>
+            <td>
+                <form method="get" action="https://github.com/MacSergey/NetworkMultitool/releases/tag/v1.3.5.2">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.3.5.2</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>No Big Truck</td>
+            <td>
+                <form method="get" action="https://github.com/MacSergey/NoBigTruck/releases/tag/v1.3.0.6">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.3.0.6</td>
+            <td>Requires AVO (Advanced Vehicle Options) to function.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony</button>
+                </form>
+
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="dependency-button" type="submit">AVO (Advanced Vehicle Options)</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Node Controller Renewal</td>
+            <td>
+                <form method="get" action="https://github.com/MacSergey/NodeController30/releases/tag/v3.5.0.3">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>3.5.0.3</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Patch Loader Mod</td>
+            <td>
+                <form method="get" action="https://github.com/CitiesSkylinesMods/PatchLoader/releases">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>2.2.0</td>
+            <td>Normal procedure.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Roundabout Builder</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/NullReferenceCatcher/releases/tag/v1.0">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>v1.0</td>
+            <td>Normal procedure.</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Procedural Objects</td>
+            <td>
+                <form method="get" action="http://proceduralobjects.shoutwiki.com/wiki/Download">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.7.8</td>
+            <td>Please note that the mod is available from the provided website, and you won't find it on GitHub like some of the other mods listed. Procedural Objects also has an empty popup box when you first subscribe, therefore, to fix this it's important to restart the game.'</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Repaint</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.7.3.1</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Skyve (Stable)</td>
+            <td>
+                <form method="get" action="https://discord.gg/t-d-w-s-village-904287711962222632">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>3.2.0</td>
+            <td>Obtain Skyve and Skyve (Beta) from the official T.D.W's Village Discord.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+                <form method="get" action="https://github.com/CitiesSkylinesMods/PatchLoader/releases">
+                    <button class="dependency-button" type="submit">Patch Loader Mod</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Theme Mixer 2.5</td>
+            <td>
+                <form method="get" action="https://github.com/NyokoDev/ThemeMixer2.5/releases/tag/v1.14">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>1.14</td>
+            <td>To use all themes in Theme Mixer 2.5 on EPIC, copy all .crp themes from the Theme Mixer folder to the 'Assets' folder located in the "AppData" directory of your Cities: Skylines game installation.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>TMPE: Traffic Manager President Edition</td>
+            <td>
+                <form method="get" action="https://github.com/CitiesSkylinesMods/TMPE/releases/tag/11.8.0.0">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>11.8.0.0</td>
+            <td>Installation guide: <a href="https://github.com/CitiesSkylinesMods/TMPE/wiki/Installation">https://github.com/CitiesSkylinesMods/TMPE/wiki/Installation</a></td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Transfer Manager (CE)</td>
+            <td>
+                <form method="get" action="https://github.com/Sleepy334/TransferManagerCE/tree/main/Epic/STABLE/2.3.32">
+                    <button class="download-button" type="submit">Download</button>
+                </form>
+            </td>
+            <td>v2.3.32</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Unlimited Outside Connections Revisited</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.1</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Vehicle Selector</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.4.3</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Visibility Control</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>0.9.2</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Zoning Adjuster</td>
+            <td>
+                <form method="get" action="https://discord.gg/WEyYtxb88K">
+                    <button class="discord-button" type="submit">Discord</button>
+                </form>
+            </td>
+            <td>1.17</td>
+            <td>Normal procedure.</td>
+            <td>
+                <form method="get" action="https://github.com/boformer/CitiesHarmony/releases/tag/v2.2.2-0">
+                    <button class="dependency-button" type="submit">Harmony 2.x</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+    <p>This website is hosted by Nyoko with the assistance of Chamëleon TBN.</p>
+    <a href="https://discord.gg/GqGbeUD8Dg" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 10px;">Support</a>
+</body>
 </html>
