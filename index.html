@@ -33,6 +33,11 @@
 
 
     <h3>Last Edit: 17.10.2023</h3>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7488957148914773"
+            crossorigin="anonymous"></script>
+
+
+
     <p><h2>Normal procedure:</h2> To obtain the Mods, utilize SkyLinx's 'Direct Download' feature. After downloading, you'll need to manually move these files to the %LocalAppData%\Colossal Order\Cities_Skylines\Addons\Mods directory within the Cities Skylines' AppData folder. Direct Download automatically retrieves the mods from their corresponding GitHub releases.</p>
     <h2>Problems?</h2>
     <p>If you're experiencing difficulties getting the above to work, head to my discord server for support: <a href="https://discord.gg/GqGbeUD8Dg">https://discord.gg/GqGbeUD8Dg</a></p>
@@ -85,8 +90,9 @@
                 </a>
             </td>
             <td>
-             
-              81 Tiles 2</td>
+
+                81 Tiles 2
+            </td>
             <td>
                 <form method="get" action="https://discord.gg/WEyYtxb88K">
                     <button class="discord-button" type="submit">Discord</button>
@@ -108,8 +114,9 @@
                 </a>
             </td>
             <td>
-             
-                  ACME</td>
+
+                ACME
+            </td>
             <td>
                 <form method="get" action="https://discord.gg/WEyYtxb88K">
                     <button class="discord-button" type="submit">Discord</button>
@@ -130,7 +137,8 @@
                 </a>
             </td>
             <td>
-              Adaptive Networks (AN) V3.18 (STABLE)</td>
+                Adaptive Networks (AN) V3.18 (STABLE)
+            </td>
 
             <td>
                 <form method="get" action="https://github.com/kianzarrin/AdaptiveNetworks/releases/download/V3.16.18/AdaptiveRoads-V3.16.18.zip">
@@ -155,7 +163,8 @@
                 </a>
             </td>
             <td>
-               Advanced Building Level Control</td>
+                Advanced Building Level Control
+            </td>
             <td>
                 <form method="get" action="https://discord.gg/WEyYtxb88K">
                     <button class="discord-button" type="submit">Discord</button>
@@ -920,11 +929,11 @@
             const modSearchInput = document.getElementById("modSearch");
             const modNames = Array.from(document.querySelectorAll("table tr td:nth-child(2)")); // Adjust the index to target the "Mod Name" column
             const noResultsLabel = document.getElementById("noResultsLabel");
-    
+
             modSearchInput.addEventListener("input", function () {
                 const searchTerm = modSearchInput.value.toLowerCase();
                 let anyMatch = false;
-    
+
                 modNames.forEach(function (modName) {
                     const modNameText = modName.textContent.toLowerCase();
                     const row = modName.parentElement;
@@ -935,7 +944,7 @@
                         row.style.display = "none";
                     }
                 });
-    
+
                 if (!anyMatch) {
                     noResultsLabel.style.display = "block";
                 } else {
@@ -944,7 +953,7 @@
             });
         });
     </script>
-    
+
 
 
 </body>
