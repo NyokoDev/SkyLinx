@@ -8,7 +8,7 @@ body {
    
         background-color: black !important;
         color: white !important;
-        background: url("modback.png") no-repeat center center fixed;
+        background: url("../UI/modback.png") no-repeat center center fixed;
     background-size: cover;
   
     
@@ -85,7 +85,7 @@ h1, h2 {
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: url("skylinx.png"); /* Specify the image file path */
+    background-image: url("../UI/skylinx.png"); /* Specify the image file path */
     background-size: cover; /* You can use 'cover' or 'contain' based on your preference */
     width: 100%; /* Set the width to 100% to fill the container */
     height: 100%; /* Set the height to 100% to fill the container */
