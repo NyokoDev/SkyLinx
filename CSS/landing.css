@@ -6,6 +6,14 @@
     position: relative;
 }
 
+
+td, th {
+    width: 100px; /* Set the desired width for table cells */
+	height: 100px; /* Set the desired height for table cells */
+    text-align: center; /* Center text within cells */
+}
+
+
 /* Define the size for images here */
 .image-wrapper img {
     width: 200px;

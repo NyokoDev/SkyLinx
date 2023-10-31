@@ -69,13 +69,25 @@
     <p>For anything algernon (Loading Screen Mod Revisited and more), you must obtain the 'Epic' role there. You can get the releases from the algernon's mods discord: <a href="https://discord.gg/WEyYtxb88K">https://discord.gg/WEyYtxb88K</a></p>
     <p>What does 'Recompiled' mean? The mod was recompiled because the author was unreachable. All recompiled versions were tested.</p>
 
-
-
-
-    <div class="container">
-
-        <div class="icon"></div>
+    <h4 style="font-family: 'Courier New', monospace; color: green;">Help this website keep running! Only $1!</h4>
+    <div id="donate-button-container">
+        <div id="donate-button"></div>
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+        <script>
+            PayPal.Donation.Button({
+                env: 'production',
+                hosted_button_id: '63FG57K3EL8NJ',
+                image: {
+                    src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                    alt: 'Donate with PayPal button',
+                    title: 'PayPal - The safer, easier way to pay online!',
+                }
+            }).render('#donate-button');
+        </script>
     </div>
+
+
+
 
     <table>
         <tr>
