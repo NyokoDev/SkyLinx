@@ -13,6 +13,30 @@ td, th {
     text-align: center; /* Center text within cells */
 }
 
+@font-face {
+    font-family: 'Gilgan';
+    src: url('Gilgan.otf') format('opentype');
+}
+
+.newcontainer {
+    position: fixed;
+    top: 1.1%;
+    width: 141px;
+    left: 50%;
+    height: 49px;
+    z-index: 3;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+
+.newcontainer img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: 49px; /* Maintain the image's aspect ratio */
+    display: block; /* Remove extra space beneath the image */
+    margin: 0 auto; /* Center the image horizontally within the container */
+}
+
 
 /* Define the size for images here */
 .image-wrapper img {
@@ -23,33 +47,60 @@ td, th {
     left: 0; /* Adjust the left property as needed */
 }
 
+.text h1 {
+    font-family: 'Gilgan', sans-serif; /* Apply custom font to the h1 element inside .text */
+    color: white; /* Example: Set the text color to white */
+    /* Add any additional styling you need for the h1 element */
+}
+
+.text2 h2 {
+    font-family: 'Gilgan', sans-serif; /* Apply custom font to the h1 element inside .text */
+    color: floralwhite  /* Example: Set the text color to white */
+    /* Add any additional styling you need for the h1 element */
+}
+
 .text {
-    width: auto; /* Remove the fixed width */
+    width: auto;
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    /* Remove background color */
-    padding: 5px 10px; /* Adjust the padding as needed */
-    margin: 0; /* Add margin to center the text vertically if necessary */
+    padding: 5px 10px;
+    margin: 0;
     color: white;
-    white-space: nowrap; /* Prevent text from wrapping */
-    display: inline-block; /* Make the background cover the entire text */
-    font-weight: bold; /* Set the text to be bold */
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: bold;
 }
 
-
-.skylinx-image {
+.text2 {
+    width: auto;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-image: url("../UI/skylinx.png"); /* Specify the image file path */
-    background-size: cover; /* You can use 'cover' or 'contain' based on your preference */
-    width: 100%; /* Set the width to 100% to fill the container */
-    height: 100%; /* Set the height to 100% to fill the container */
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0;
+    color: white;
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: bold;
 }
+
+
+skylinx-image {
+    position: absolute;
+
+    
+    z-index: 1;
+    background-image: url("../UI/skylinxlogo.png");
+    height: auto;
+    width: auto;
+}
+
+
 
 
 body {
