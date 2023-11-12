@@ -15,6 +15,25 @@ body {
 
 }
 
+.newcontainer {
+    position: absolute;
+    top: 1.1%;
+    width: 141px;
+    left: 50%;
+    height: 49px;
+    z-index: 3;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+
+    .newcontainer img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        height: 49px; /* Maintain the image's aspect ratio */
+        display: block; /* Remove extra space beneath the image */
+        margin: 0 auto; /* Center the image horizontally within the container */
+    }
+
 
 h1, h2 {
     font-weight: bold;
@@ -133,6 +152,10 @@ h4 {
 
 /* Style for the search bar */
 .search-bar {
+    position: absolute;
+    top: 5%;
+    left: 80%; /* Adjust this value to move it to the desired position */
+    z-index: 4;
     margin: 10px;
 }
 
@@ -140,8 +163,9 @@ h4 {
 #modSearch {
     padding: 5px;
     width: 200px;
-    position: fixed;
-    left: -300px; /* Adjust this value to move it to the desired position */
+    position: absolute;
+    top: 5%;
+    left: 80%; /* Adjust this value to move it to the desired position */
     background-color: lightgrey; /* Set the background color to light grey */
     border: 2px solid #ccc; /* Increase the border width to 2px */
     border-radius: 5px;
