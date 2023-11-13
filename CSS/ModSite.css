@@ -1,0 +1,14 @@
+.ModImage {
+	position: absolute;
+	max-width: 10px;
+	border: thick;
+}
+
+	.ModImage img {
+		position: absolute;
+		top: 10vh;
+		left: 5vh;
+		max-width: 40vh;
+		border: thick;
+		box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5); /* Adjust the blur radius and color as needed */
+	}
