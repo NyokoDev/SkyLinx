@@ -3,17 +3,73 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
-
-   
-        background-color: black !important;
-        color: white !important;
-        background: url("../UI/modback.png") no-repeat center center fixed;
+    font-family: 'OpenSans', sans-serif; /* Keeping the existing font-family */
+    color: white !important;
+    background: url("../UI/modback.png") no-repeat center center fixed;
     background-size: cover;
-  
-    
-
+    position: relative; /* Ensure relative positioning for absolute children */
 }
+
+@font-face {
+    font-family: "Gilgan";
+    src: url("../Gilgan.otf") format("opentype");
+  }
+
+
+/* For all elements */
+.onboardingsupport,
+.SupportDesc,
+.troubleshooting-instructions,
+.visual-c-runtimes,
+.graphics-cards {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Gilgan';
+    color: white;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Specific positioning and increased spacing based on graphics-cards margin-top */
+.onboardingsupport {
+    top: calc(5vh + 5vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh); /* Adjusted based on the graphics-cards margin-top */
+}
+
+.SupportDesc {
+    top: calc(30vh + 5vh + 25vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh); /* Adjusted based on the graphics-cards margin-top */
+}
+
+.troubleshooting-instructions {
+    top: calc(5vh + 5vh + 50vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh + 45vh); /* Adjusted based on the graphics-cards margin-top */
+    text-align: start;
+}
+
+.visual-c-runtimes {
+    top: calc(20vh + 5vh + 75vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh + 75vh); /* Adjusted based on the graphics-cards margin-top */
+}
+
+.graphics-cards {
+    top: 100vh; /* Adjusted top position for reference */
+    margin-top: 100vh; /* Maintaining the initial margin-top value for graphics-cards */
+    text-align: start;
+}
+
+
+
+.skylinxlogowhite {
+    position: absolute;
+    top: 2vh;
+    left: 50%; /* Centering horizontally */
+    transform: translateX(-50%); /* Adjusting to center */
+    z-index: 4;
+}
+
 
 @media (max-width: 575.98px) {
     #skylinx-nav-logo > .navbar-brand {
