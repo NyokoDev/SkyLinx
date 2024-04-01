@@ -1,0 +1,237 @@
+/* styles.css */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans', sans-serif; /* Keeping the existing font-family */
+    color: white !important;
+    background: url("../UI/modback.png") no-repeat center center fixed;
+    background-size: cover;
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+@font-face {
+    font-family: "Gilgan";
+    src: url("../Gilgan.otf") format("opentype");
+  }
+
+
+/* For all elements */
+.onboardingsupport,
+.SupportDesc,
+.troubleshooting-instructions,
+.visual-c-runtimes,
+.graphics-cards {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Gilgan';
+    color: white;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Specific positioning and increased spacing based on graphics-cards margin-top */
+.onboardingsupport {
+    top: calc(5vh + 5vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh); /* Adjusted based on the graphics-cards margin-top */
+}
+
+.SupportDesc {
+    top: calc(30vh + 5vh + 25vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh); /* Adjusted based on the graphics-cards margin-top */
+}
+
+.troubleshooting-instructions {
+    top: calc(5vh + 5vh + 50vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh + 45vh); /* Adjusted based on the graphics-cards margin-top */
+    text-align: start;
+}
+
+.visual-c-runtimes {
+    top: calc(20vh + 5vh + 75vh); /* Adjusted based on the graphics-cards margin-top */
+    margin-top: calc(5vh + 5vh + 75vh); /* Adjusted based on the graphics-cards margin-top */
+}
+
+.graphics-cards {
+    top: 100vh; /* Adjusted top position for reference */
+    margin-top: 100vh; /* Maintaining the initial margin-top value for graphics-cards */
+    text-align: start;
+}
+
+
+
+.skylinxlogowhite {
+    position: absolute;
+    top: 2vh;
+    left: 50%; /* Centering horizontally */
+    transform: translateX(-50%); /* Adjusting to center */
+    z-index: 4;
+}
+
+
+@media (max-width: 575.98px) {
+    #skylinx-nav-logo > .navbar-brand {
+        right: 0 !important;
+        left: auto !important;
+        transform: translate(0, -50%) !important;
+    }
+}
+
+.newcontainer {
+    position: absolute;
+    top: 1.1%;
+    width: 141px;
+    left: 50%;
+    height: 49px;
+    z-index: 3;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+
+    .newcontainer img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        height: 49px; /* Maintain the image's aspect ratio */
+        display: block; /* Remove extra space beneath the image */
+        margin: 0 auto; /* Center the image horizontally within the container */
+    }
+
+
+h1, h2 {
+    font-weight: bold;
+}
+
+
+h4 {
+    font-family: "Courier New", monospace;
+    color: #4CAF50;
+}
+
+
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url("https://i.imgur.com/Nbbu7Hl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.download-button {
+    width: 150px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.discord-button {
+    width: 150px;
+    background-color: #3498db; /* Blue */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.dependency-button {
+    width: 150px;
+    background-color: #FF8C00; /* Orange */
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.image-container {
+    position: absolute;
+    top: 25px; /* Vertically center the container */
+    left: 1300px; /* Horizontally center the container */
+    transform: translate(-50%, -50%); /* Center the container precisely */
+    width: 587px; /* Set the width to match the image width */
+    height: 41px; /* Set the height to match the image height */
+}
+
+.skylinx-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("../UI/skylinx.png"); /* Specify the image file path */
+    background-size: cover; /* You can use 'cover' or 'contain' based on your preference */
+    width: 100%; /* Set the width to 100% to fill the container */
+    height: 100%; /* Set the height to 100% to fill the container */
+}
+
+
+.iframe-container {
+    position: absolute;
+    top: -10px; /* You can adjust the top position as needed */
+    right: 0; /* This will position the container to the right side */
+}
+
+
+
+
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+/* Style for the search bar */
+.search-bar {
+    position: absolute;
+    top: 5%;
+    left: 145vh; /* Adjust this value to move it to the desired position */
+    z-index: 4;
+    margin: 10px;
+}
+
+/* Style for the search input */
+#modSearch {
+    padding: 5px;
+    width: 200px;
+    position: absolute;
+    top: 5%;
+    left: 80%; /* Adjust this value to move it to the desired position */
+    background-color: lightgrey; /* Set the background color to light grey */
+    border: 2px solid #ccc; /* Increase the border width to 2px */
+    border-radius: 5px;
+    font-size: 16px;
+}

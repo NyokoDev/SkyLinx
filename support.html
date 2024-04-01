@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SkyLinx - Cities Skylines Mods</title>
+    <meta property="og:title" content="SkyLinx - The Mod Resource">
+    <meta property="og:description" content="Troubleshooting steps for Cities Skylines 1 and 2.">
+    <meta property="og:image" content="https://i.imgur.com/J4WudTa.png">
+    <meta property="og:url" content="https://skylinx.onrender.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="icon" href="https://i.imgur.com/Nbbu7Hl.png" type="image/png">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/support.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-db">
+            <div class="container-fluid">
+              <div class="d-flex">
+                <a class="nav-item" href="modpreview.php">Mods</a>
+                <a class="nav-item" href="support.html">Support</a>
+              </div>
+              <div id="skylinx-nav-logo" class="mx-auto text-center">
+                <div
+                  class="navbar-brand position-absolute top-50 start-50 translate-middle"
+                >
+                  <img
+                    src="UI/Skylinxlogowhite.svg"
+                    alt="SkyLinx"
+                    height="50"
+                       width="100"
+                    class="d-inline-block align-top"
+                  />
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+    <div class="skylinxlogowhite">
+    <img
+    src="UI/Skylinxlogowhite.svg"
+    alt="SkyLinx"
+    height="200"
+       width="400"
+   class="skylinxlogowhite"
+  />
+</div>
+
+<div class="SupportDesc">
+    <p>
+        Cities Skylines 2 had an intriguing beginning, with some users encountering performance problems, others facing crashes, and many grappling with overall instability. In response to these issues, I've established this website to provide common troubleshooting solutions. It's worth noting that these methods were suggested by me on the PDXForums and have proven effective for many users dealing with crashes.
+    </p>
+
+    <p> First you have to install the Runtimes and Visual C Redistributable as explained below, to install the Runtimes run 'installall.bat'</p>
+
+   </div>
+    <!-- Updated label and download link for Visual C Runtimes -->
+    <div class="visual-c-runtimes">
+        <label>Download Visual C Runtimes for issues with Cities Skylines 1 or 2:</label>
+        <form method="get" action="https://github.com/NyokoDev/SkyLinx/releases/download/visual/Visual-C-Runtimes.zip">
+            <button class="download-button" type="submit">Direct Download</button>
+        </form>
+        <p>If the above button doesn't work, you can also download from this <a href="https://github.com/NyokoDev/SkyLinx/releases/tag/visual">GitHub release</a>.</p>
+    </div>
+
+    <div class="graphics-cards">
+        <h2>Reinstalling Graphic Card Drivers</h2>
+        <label>Reinstalling graphics drivers can sometimes be beneficial.</label>
+        <ul>
+            <li><a href="https://www.amd.com/en/support">AMD Graphics Card Drivers</a></li>
+            <li><a href="https://www.nvidia.com/Download/index.aspx">NVIDIA Graphics Card Drivers</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Instructions for troubleshooting Cities Skylines -->
+    <div class="troubleshooting-instructions">
+        <h2>Troubleshooting Cities Skylines:</h2>
+        <h1>Paradox Launcher Troubleshoot</h1>
+        <p>Follow these steps if you encounter issues with Cities Skylines:</p>
+        <ol>
+            <li>Exit the Steam app entirely.</li>
+            <li>Uninstall Paradox Launcher v2 from the Windows "Apps and features" utility, if still present.</li>
+            <li>
+                Delete the following folders if still present:
+                <ul>
+                    <li>C:/users/&lt;UserName&gt;/AppData/Local/Programs/Paradox Interactive/</li>
+                    <li>C:/users/&lt;UserName&gt;/AppData/Local/Paradox Interactive/</li>
+                    <li>C:/users/&lt;UserName&gt;/AppData/Roaming/Paradox Interactive/launcher-v2/</li>
+                </ul>
+                To see the AppData folder, you'll need to enable "View Hidden Items" in File Explorer.
+            </li>
+            <li>Run Steam as an administrator (right-click Steam.exe and choose "Run as administrator").</li>
+            <li>Launch the game by clicking the "PLAY" button in Steam.</li>
+            <li>Reinstall graphics driver.</li>
+            <li>Reinstall Visual Studio Redistributable from <a href="https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">here</a>.</li>
+            <li>Reinstall Visual Studio runtimes at the above green button</li>
+            <li>Verify game files.</li>
+        </ol>
+    </div>
+
+    <div class="onboardingsupport">
+    <h2>If you're experiencing issues with Cities Skylines crashes, you can take the following steps:</h2>
+    <ol>
+        <li>Go to the Paradox Forums and submit a bug report at <a href="https://forum.paradoxplaza.com/forum/forums/cities-skylines-2-bug-reports.1162/">this link</a>.</li>
+        <li>
+            Provide these files when submitting your bug report:
+            <ul>
+                <li>Player.log</li>
+                <li>
+                    A zipped Logs folder found here:
+                    <code>C:\Users\%username%\AppData\LocalLow\Colossal Order\Cities Skylines II</code>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <h2>Personalized support is also available at my Discord Server, you'll also need the same files. Join using this link: <a href="https://discord.gg/GqGbeUD8Dg">Discord Invite</a></h2>
+</div>
+
+</body>
+</html>
