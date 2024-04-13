@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+images/x/logo_epic.png
+images/x/logo_microsoft.png
+images/x/logo_steam.png
