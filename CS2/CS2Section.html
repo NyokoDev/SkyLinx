@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SkyLinx - Cities Skylines Mods</title>
+    <meta property="og:title" content="SkyLinx - The Mod Resource">
+    <meta property="og:description" content="Mods and Assets for Cities: Skylines.">
+    <meta property="og:image" content="https://i.imgur.com/J4WudTa.png">
+    <meta property="og:url" content="https://nyokodev.github.io/SkyLinx/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="icon" href="https://i.imgur.com/J4WudTa.png" type="image/png">
+    <link rel="stylesheet" href=".././CSS/styles.css">
+    <link rel="stylesheet" href=".././CSS/preview.css">
+    <link rel="stylesheet" href=".././CS2/CS2Styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-db">
+        <div class="container-fluid">
+            <div class="d-flex">
+                <a class="nav-item" href=".././index.html">Mods</a>
+                <a class="nav-item" href=".././support.html">Support</a>
+                
+            </div>
+            <div id="skylinx-nav-logo" class="mx-auto text-center">
+                <div class="navbar-brand position-absolute top-50 start-50 translate-middle">
+                    <img src=".././UI/Skylinxlogowhite.svg"
+                         alt="SkyLinx"
+                         height="50"
+                         width="100"
+                         class="d-inline-block align-top" />
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="modSearch" placeholder="Search for mods...">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="FeaturedText">
+    <h1> Featured Mods </h1>
+
+    <div class="ModCard">
+        <div class="ModCardImg">
+        <img src=".././CS2/CA.png" alt="Description of your image" >
+    </div>
+        <h1 class="ModCardName">ColorAdjustments</h1>
+        <a href=".././CS2/Mods/ColorAdjustments.zip">  <button class="ModCardDownloadButton">Download</button> </a>
+    </div>
+    
+<div class="OtherFeaturedContainer">
+    <div class="ModCardOther">
+        <img class="ModCardOtherImg" src=".././CS2/RenderMastery.png" alt="Description of your image" >
+        <h1 class="ModCardOtherName">Render Mastery</h1>
+        <a href="./../cs2/Mods/RenderMastery.zip"><button class="ModCardOtherDownload">Download</button></a>
+    </div>
+    <div class="ModCardOther2">
+        <img class="ModCardOtherImg" src=".././CS2/REEXT.png" alt="Description of your image" >
+        <h1 class="ModCardOtherName">Resolution Extension</h1>
+        <a href="./../cs2/Mods/ResolutionExtension.zip"><button class="ModCardOtherDownload">Download</button></a>
+    </div>
+    <div class="ModCardOther3">
+        <img class="ModCardOtherImg" src=".././CS2/PreservePhotoMode.png" alt="Description of your image" >
+        <h1 class="ModCardOtherName">PreservePhotoMode</h1>
+       <a href="./../cs2/Mods/PreservePhotomode.zip"><button class="ModCardOtherDownload">Download</button></a>
+    </div>
+    <div class="ModCardOther4">
+
+        <img class="ModCardOtherImg" src=".././CS2/STApps-Extended_Road_Upgrades-1.3.2.png.256x256_q95.jpg" alt="Description of your image" >
+        <h1 class="ModCardOtherName">Extended Road Upgrades</h1>
+       <a href=".././CS2/Mods/ExtendedRoadUpgrades.zip"> <button class="ModCardOtherDownload">Download</button> </a>
+    </div>
+
+
+</div>
+
+<div class="ParadoxAdvice">
+
+<a href="https://mods.paradoxplaza.com/games/cities_skylines_2?orderBy=desc&sortBy=best">   <img class="ParadoxAdviceImg"  src=".././CS2/PDXMods-md-onDark-Color1.png" alt="Description of your image" > </a> 
+<h1> Find plenty of other mods at Paradox Mods.</h1>
+</div>
+
+    </script>
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7488957148914773"
+            crossorigin="anonymous"></script>
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-7488957148914773?ers=1" nonce="osr_F8wNzA06drl2ClVt6Q"></script>
+    <script nonce="osr_F8wNzA06drl2ClVt6Q">(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
+
+   
+           
+
+
+
+
+    
+
+
+
+        </script>
+
+<script>
+    modSearch.addEventListener("input", function () {
+                    const searchTerm = modSearch.value.toLowerCase();
+
+                    const modItems = document.getElementsByClassName("image-item");
+                    let hasResults = false;
+
+                    for (let i = 0; i < modItems.length; i++) {
+                        const modName = modItems[i].querySelector("h3").innerText.toLowerCase();
+
+                        if (modName.includes(searchTerm)) {
+                            modItems[i].style.display = "block";
+                            hasResults = true;
+                        } else {
+                            modItems[i].style.display = "none";
+                        }
+                    }
+
+                    if (!hasResults) {
+                        noResultsLabel.style.display = "block";
+                    } else {
+                        noResultsLabel.style.display = "none";
+                    }
+                });
+            
+</script>
+
+
+
+
+
+</body>
+</html>

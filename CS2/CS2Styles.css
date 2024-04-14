@@ -1,0 +1,300 @@
+.FeaturedText {
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ModCard {
+    display: flex;
+    position: relative;
+    color: black;
+    transition: 1s;
+    top: 2vh;
+    width: 88vh;
+    height: 90vh;
+    border: 3px solid black; /* Add a 1px solid black border */
+    padding: 10px; /* Add padding inside the box */
+    display: inline-block; /* Ensure it behaves like a block element but inline with other elements */
+    background-color: black /* Background color with 50% opacity */
+
+}
+
+.ModCard:hover{
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+
+
+
+.ModCard img{
+    display: flex;
+    position: relative;
+    top: 0vh;
+    width: 85vh;
+    height: 80vh;
+    display: inline-block;
+
+}
+
+
+
+
+
+
+
+.ModCardName{
+    position: relative;
+    color: white;
+    top: 2vh;
+    font-family: Gilgan;
+
+
+}
+
+.ModCardDownloadButton{
+    position: relative;
+    color: black;
+    top: -4vh;
+    right: -70vh;
+    background-color: green;
+    font-family: Gilgan;
+}
+
+
+
+.OtherFeaturedContainer{
+    display: flex;
+    position: relative;
+    width: 100vh;
+    height: 0vh;
+    top: -89.2vh;
+    right: -100vh;
+}
+
+
+.ModCardOther:hover{
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+.ModCardOther2:hover{
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+.ModCardOther3:hover{
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+.ModCardOther4:hover{
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+
+
+.ModCardOther{
+    color: black;
+    transition: 1s;
+    width: 300vh;
+    height: 30vh;
+    border: 3px solid black; /* Add a 1px solid black border */
+    padding: 10px; /* Add padding inside the box */
+    display: inline-block; /* Ensure it behaves like a block element but inline with other elements */
+    background-color:black /* Background color with 50% opacity */
+}
+
+.ModCardOther2{
+    position: relative;
+    color: black;
+    transition: 1s;
+    top:0vh;
+    right: -5vh;
+    width: 300vh;
+    height: 30vh;
+    border: 3px solid black; /* Add a 1px solid black border */
+    padding: 10px; /* Add padding inside the box */
+    display: inline-block; /* Ensure it behaves like a block element but inline with other elements */
+    background-color: black /* Background color with 50% opacity */
+}
+
+.ModCardOther3{
+    position: relative;
+    color: black;
+    transition: 1s;
+    top:40vh;
+    right: 20vh;
+    width: 300vh;
+    height: 30vh;
+    border: 3px solid black; /* Add a 1px solid black border */
+    padding: 10px; /* Add padding inside the box */
+    display: inline-block; /* Ensure it behaves like a block element but inline with other elements */
+    background-color: black /* Background color with 50% opacity */
+}
+
+.ModCardOther4{
+    position: relative;
+    color: black;
+    transition: 1s;
+    top:40vh;
+    right: 78vh;
+    width: 300vh;
+    height: 30vh;
+    border: 3px solid black; /* Add a 1px solid black border */
+    padding: 10px; /* Add padding inside the box */
+    display: inline-block; /* Ensure it behaves like a block element but inline with other elements */
+    background-color: black /* Background color with 50% opacity */
+}
+
+.ModCardOtherName{
+    position: relative;
+    width: 20vh;
+    top: 1vh;
+    font-size: 2vh;
+white-space: nowrap;
+    height: 20vh;
+    color: white;
+    font-family: Gilgan;
+}
+
+.ModCardOther img{
+    position: relative;
+    width: 23vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: red;
+    font-family: Gilgan;
+}
+
+.ModCardOtherDownload{
+    position: relative;
+    top: -17vh;
+    font-family: Gilgan;
+    color: white;
+    background-color: green;
+}
+
+
+
+
+.ModCardOtherName2{
+    position: relative;
+    width: 20vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: white;
+    font-family: Gilgan;
+}
+
+.ModCardOther2 img{
+    position: relative;
+    width: 23vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: red;
+    font-family: Gilgan;
+}
+
+.ModCardOtherDownload2{
+    position: relative;
+    top: -17vh;
+    font-family: Gilgan;
+    color: white;
+    background-color: green;
+}
+
+
+
+
+.ModCardOtherName3{
+    position: relative;
+    width: 20vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: white;
+    font-family: Gilgan;
+}
+
+.ModCardOther3 img{
+    position: relative;
+    width: 23vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: red;
+    font-family: Gilgan;
+}
+
+.ModCardOtherDownload3{
+    position: relative;
+    top: -17vh;
+    font-family: Gilgan;
+    color: white;
+    background-color: green;
+}
+
+
+.ModCardOtherName4{
+    position: relative;
+    width: 20vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: white;
+    font-family: Gilgan;
+}
+
+.ModCardOther4 img{
+    position: relative;
+    width: 23vh;
+    top: 0vh;
+    font-size: 3vh;
+    height: 20vh;
+    color: red;
+    font-family: Gilgan;
+}
+
+.ModCardOtherDownload4{
+    position: relative;
+    top: -17vh;
+    font-family: Gilgan;
+    color: white;
+    background-color: green;
+}
+
+.ParadoxAdvice{
+    position: absolute;
+    color: black;
+    transition: 1s;
+    top: 110vh;
+    right: -5vh;
+    height: 20vh;
+    width: 200vh;
+    border: 3px solid black; /* Add a 1px solid black border */
+    padding: 10px; /* Add padding inside the box */
+    background-color: black /* Background color with 50% opacity */
+}
+
+.ParadoxAdvice img{
+    position: relative;
+    top: 0vh;
+    right: -20vh;
+    width: 50vh;
+}
+
+.ParadoxAdvice h1{
+    position: relative;
+    top: -20vh;
+    right: -80vh;
+    width: 50vh;
+    color: white;
+    font-family: Gilgan;
+    white-space: nowrap;
+}
