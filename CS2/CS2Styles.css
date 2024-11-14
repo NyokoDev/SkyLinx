@@ -25,7 +25,27 @@
     transition: 1s;
 }
 
+.Lumina_Card {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element both vertically and horizontally */
+    max-width: 20rem;
+    height: 31rem;
+    display: inline-block;
+    transition: 1s;
+}
 
+.Lumina_Card img {
+    height: inherit;
+    width: inherit;
+}
+
+.Lumina_Card:hover {
+    transform: translate(-50%, calc(-50% - 5rem)); /* Keeps the card centered while applying hover effect */
+    transition: 1s;
+}
 
 
 .ModCard img{
