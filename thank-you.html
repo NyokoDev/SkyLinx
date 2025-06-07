@@ -95,6 +95,35 @@
   #donate-button img:hover {
     transform: scale(1.05);
   }
+
+  .link-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.ui-link-button {
+  background-color: #111;
+  border: 2px solid #61dafb;
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+}
+
+.ui-link-button:hover {
+  background-color: #222;
+  box-shadow: 0 0 18px rgba(97, 218, 251, 0.7);
+  transform: translateY(-2px);
+}
+
+
 </style>
 </head>
 <body>
@@ -105,7 +134,11 @@
 
   <h1>Thank you for your download!</h1>
   <p>Your download should start shortly.</p>
-  <a href="modpreview.html" class="back-link">Back to homepage</a>
+<div class="link-buttons">
+  <a href="modpreview.html" class="ui-link-button">⬅ Back to homepage</a>
+  <a href="howtoinstall.html" class="ui-link-button">📘 Installation Instructions</a>
+</div>
+
 
   <div class="donate-section">
     <h2>Support SkyLinx ❤️</h2>
