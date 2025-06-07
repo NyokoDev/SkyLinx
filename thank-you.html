@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thank You - SkyLinx</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #000000; /* full black background */
+    color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Logo container */
+  .logo-wrapper {
+    width: 200px;  /* fixed width to control size */
+    margin-bottom: 2rem;
+  }
+
+  /* Logo image */
+  .logo-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a.back-link {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+    transition: color 0.3s ease;
+  }
+  a.back-link:hover {
+    color: #21a1f1;
+  }
+
+  /* Donate section */
+  .donate-section {
+    max-width: 350px;
+    margin: 3rem auto 0 auto;
+    padding: 20px;
+    background: #111111;
+    border: 2px solid #61dafb;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px rgba(97, 218, 251, 0.7);
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+  }
+  .donate-section:hover {
+    background: #222222;
+    box-shadow: 0 0 25px 5px rgba(97, 218, 251, 1);
+  }
+
+  .donate-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #61dafb;
+  }
+
+  /* PayPal button styling override */
+  #donate-button img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  #donate-button img:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="logo-wrapper">
+    <img src="UI/skylinxlogo.png" alt="SkyLinx Logo" />
+  </div>
+
+  <h1>Thank you for your download!</h1>
+  <p>Your download should start shortly.</p>
+  <a href="modpreview.html" class="back-link">Back to homepage</a>
+
+  <div class="donate-section">
+    <h2>Support SkyLinx ❤️</h2>
+    <div id="donate-button"></div>
+  </div>
+
+  <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+  <script>
+    PayPal.Donation.Button({
+      env: 'production',
+      hosted_button_id: '63FG57K3EL8NJ',
+      image: {
+        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+        alt: 'Donate with PayPal button',
+        title: 'PayPal - The safer, easier way to pay online!',
+      },
+    }).render('#donate-button');
+  </script>
+
+</body>
+</html>

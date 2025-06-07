@@ -1,157 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SkyLinx - Cities Skylines Mods</title>
-    <meta property="og:title" content="SkyLinx - The Mod Resource">
-    <meta property="og:description" content="Mods and Assets for Cities: Skylines.">
-    <meta property="og:image" content="https://i.imgur.com/J4WudTa.png">
-    <meta property="og:url" content="https://skylinx.onrender.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="icon" href="https://i.imgur.com/J4WudTa.png" type="image/png">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/preview.css">
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="SkyLinx - The Mod Resource" />
+    <meta property="og:description" content="Mods and Assets for Cities: Skylines." />
+    <meta property="og:image" content="https://i.imgur.com/J4WudTa.png" />
+    <meta property="og:url" content="https://skylinx.onrender.com" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.imgur.com/J4WudTa.png" type="image/png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/preview.css" />
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #121212;
+            color: #f8f9fa;
+            padding-bottom: 60px;
+        }
+        .navbar-bg {
+            background-color: #222;
+        }
+        .search-bar input {
+            max-width: 300px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+        }
+        #skylinx-nav-logo img {
+            max-width: 120px;
+            height: auto;
+        }
+        #imageBlock {
+            margin-top: 2rem;
+        }
+        a.btn-primary {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        #noResultsLabel {
+            display: none;
+            color: #dc3545;
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        h2, h3, h4 {
+            color: #ffffff;
+            margin-top: 2rem;
+        }
+        .donate-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .highlight-green {
+            font-family: 'Courier New', monospace;
+            color: #28a745;
+        }
+    </style>
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-sm bg-db">
-        <div class="container-fluid">
-            <div class="d-flex">
-                <a class="nav-item" href="index.html">Mods</a>
-                <a class="nav-item" href="support.html">Support</a>
-                
-            </div>
-            <div id="skylinx-nav-logo" class="mx-auto text-center">
-                <div class="navbar-brand position-absolute top-50 start-50 translate-middle">
-                    <img src="UI/Skylinxlogowhite.svg"
-                         alt="SkyLinx"
-                         height="50"
-                         width="100"
-                         class="d-inline-block align-top" />
-                </div>
-                <div class="search-bar">
-                    <input type="text" id="modSearch" placeholder="Search for mods...">
-                </div>
-            </div>
+
+
+<nav class="navbar navbar-expand-sm navbar-bg py-3">
+    <div class="container">
+        <div class="d-flex align-items-center gap-3">
+            <a class="nav-link text-light" href="index.html">Mods</a>
+            <a class="nav-link text-light" href="support.html">Support</a>
         </div>
-    </nav>
 
-    <div id="imageBlock"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const imageBlock = document.getElementById("imageBlock");
-            fetch("mods_data.csv")
-                .then(response => response.text())
-                .then(data => {
-                    const rows = data.split("\n");
-                    const headers = rows[0].split(",");
-    
-                    for (let i = 1; i < rows.length; i++) {
-                        const columns = rows[i].split(",");
-                        const steamLink = columns[0];
-                        const name = columns[1];
-                        const downloadLink = columns[2];
-                        const version = columns[3];
-                        const imageLink = columns[11]; // Use the correct index for imageLink
+        <div class="mx-auto position-relative">
+            <a href="index.html" class="navbar-brand position-absolute top-50 start-50 translate-middle">
+                <img src="UI/Skylinxlogowhite.svg" alt="SkyLinx" />
+            </a>
+        </div>
+    </div>
+</nav>
 
-    
-                        const imageItem = document.createElement("div");
-                        imageItem.className = "image-item";
-                        imageItem.innerHTML = `
-    <a href="${steamLink}" target="_blank" class="steam-link" 
-        <img src="UI/steam.png" alt="Steam" class="steam-icon">
+<!-- Welcoming -->
+<div class="container my-5 p-4 rounded" style="background-color: #1e1e1e; box-shadow: 0 4px 12px rgba(0,0,0,0.6); display: flex; align-items: center; gap: 2rem;">
+  
+  <!-- Text content on the left -->
+  <div style="flex: 1; color: #ccc; max-width: 700px;">
+    <h2 style="font-weight: 600; color: #f8f9fa; margin-bottom: 1rem;">Welcome to SkyLinx</h2>
+    <p style="font-size: 1.1rem; line-height: 1.4;">
+      Your ultimate resource for the best Cities: Skylines mods and assets. 
+      Browse, discover, and enhance your city-building experience with curated mods chosen by the community. 
+      Whether you're looking for stunning visuals, gameplay improvements, or new assets, SkyLinx has you covered.
+    </p>
+  </div>
+
+  <!-- Photo on the right, pushed fully right -->
+  <img 
+    src="UI/Skylinxlogowhite.svg" 
+    alt="SkyLinx Logo" 
+    style="width: 350px; max-height: 150px; margin-left: auto; display: block;"
+  />
+</div>
+
+
+
+
+
+<!-- Featured Mod -->
+<div class="container my-4">
+  <section id="featured-mod" class="p-4 rounded" style="background-color: #1e1e1e; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+    <h2 class="mb-3" style="font-weight: 600; font-size: 1.8rem;">Featured Mod</h2>
+    <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2983036781&searchtext=lumina" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+        <img src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/10598164/dfbb72a4ac3e4030b934c1328a7a6a8d/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-hash=7h1iQANl1W56qL-qNDAdsASgUrHuLefsRp3uTiYSxs4%3D&token-time=1750550400" alt="Featured Mod Image" style="width: 300px; height: 180px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.7);" />
+      </a>
+      <div style="color: #ddd; max-width: 600px;">
+        <h3 style="margin-bottom: 0.25rem; font-weight: 700;">Lumina</h3>
+        <p style="margin: 0 0 0.75rem; font-size: 0.9rem; color: #aaa;"><em>for Cities: Skylines II</em></p>
+        <p style="font-size: 1rem; line-height: 1.4; margin-bottom: 0.75rem;">
+          Transform your city-building experience with Lumina, a powerful post-processing mod that brings enhanced textures, realistic lighting, and atmospheric effects to your virtual cities.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2983036781&searchtext=lumina" target="_blank" class="btn btn-primary d-flex align-items-center gap-2" rel="noopener noreferrer">
+            <img src="https://mods.paradoxplaza.com/assets/4920c11719f3dc4e9911.png" alt="Steam" style="width: 20px; height: 20px;">
+            View on Paradox Mods
+          </a>
+          <a href="https://www.patreon.com/Nyoko533/shop/lumina-for-cities-skylines-ii-662768?source=storefront" target="_blank" class="btn btn-danger d-flex align-items-center gap-2" rel="noopener noreferrer" style="background-color: #f96854; border-color: #f96854;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Patreon_logo.svg" alt="Patreon" style="width: 20px; height: 20px;">
+            Buy on Patreon
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Modern Search Bar -->
+<div class="container mb-4">
+  <section
+    class="p-3 rounded"
+    style="background-color: #1e1e1e; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"
+  >
+    <div class="position-relative">
+      <!-- Search icon -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="20"
+        fill="currentColor"
+        class="position-absolute top-50 start-0 translate-middle-y"
+        style="left: 12px; pointer-events: none; z-index: 2;"
+        viewBox="0 0 16 16"
+        aria-hidden="true"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 1.106a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"
+        />
+      </svg>
+
+      <!-- Search input with inline styles -->
+<input
+  type="search"
+  id="modSearch"
+  class="form-control ps-5"
+  placeholder="Search..."
+  aria-label="Search"
+  style="background-color: transparent; position: relative; z-index: 1; padding-left: 2.5rem; color: white;"
+/>
+
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Main Mods-->
+<div class="container" id="imageBlock"></div>
+<script src="Scripts/thankyou.js"></script>
+
+
+<div class="container text-center my-4">
+    <a
+        id="noResultsLabel"
+        href="https://forms.gle/UP6zPhTdwPiNbBhk6"
+        role="button"
+        class="text-danger text-decoration-none"
+    >
+        No results found. Request this mod?
     </a>
-    <a href="${downloadLink}" target="_blank" class="steam-link">
-        <img src="${imageLink}" alt="${name}">
+</div>
+
+<div class="container text-center mt-5">
+  <p class="text-white-50 mb-3">
+    Website created and maintained by <strong class="text-info">Nyoko</strong>.
+  </p>
+  <div class="d-flex justify-content-center gap-3 flex-wrap">
+    <a
+      href="https://discord.gg/GqGbeUD8Dg"
+      class="btn btn-info"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      💬 Join Discord
     </a>
-    <h3>${name}</h3>
-    <p>Version: ${version}</p>
-`;
+    <a
+      href="privacypolicy.html"
+      class="btn btn-secondary"
+    >
+      🔒 Privacy Policy
+    </a>
+  </div>
+</div>
 
 
 
+<div class="container mt-5 text-light">
+  <h2 class="mb-3">🛠️ How to Use</h2>
+  <p>
+    Click a mod's icon to download it. If there's a Steam link next to it, it’ll take you to the mod’s Steam Workshop page.
+    Some mods may require additional dependencies — always check the description!
+  </p>
 
-                        imageBlock.appendChild(imageItem);
-                    }
-                });
-        });
-    </script>
-
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7488957148914773"
-            crossorigin="anonymous"></script>
-    <script async src="https://fundingchoicesmessages.google.com/i/pub-7488957148914773?ers=1" nonce="osr_F8wNzA06drl2ClVt6Q"></script>
-    <script nonce="osr_F8wNzA06drl2ClVt6Q">(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
-
-   
-           
-
-
-    <a id="noResultsLabel" href="https://forms.gle/UP6zPhTdwPiNbBhk6" style="display: none; color: red; text-decoration: none; cursor: pointer; font-size: 24px; text-align: center;">No results found. Request this mod?</a>
-
-    <p>This website is hosted and developed by Nyoko.</p>
-    <a href="https://discord.gg/GqGbeUD8Dg" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 10px;">Support</a>
-    <a href="privacypolicy.html" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 10px;">Privacy Policy</a>
-
-    <p><h2>Usage:</h2>To download a mod, just click on its icon. Adjacent to it, you'll find a Steam Link that directs you to the mod's Steam Page. If experiencing difficulties head to my discord server. Note some mods require dependencies. </p>
-    <h3>  Issues </h3>
-    <p>If you encounter issues downloading mods, getting them to work, or experiencing other problems, please visit: <a href="https://discord.gg/ZesQmbeygK">Discord Invite</a></p>
+  <h3 class="mt-4">⚠️ Having Issues?</h3>
+  <p>
+    Can’t download, install, or get a mod to work? Reach out on the support Discord:
+    <a href="https://discord.gg/ZesQmbeygK" target="_blank" rel="noopener noreferrer" class="link-info fw-bold">
+      Join Support Server
+    </a>
+  </p>
+</div>
 
 
+<div class="container my-5">
+  <div class="text-center bg-dark text-white p-5 rounded-4 shadow-lg border border-3 border-info">
+    <h4 class="fw-bold mb-3" style="color: #ff4dff; text-shadow: 0 0 8px #ff4dff;">
+      🚨 This Site Runs on Fumes — Toss a Buck?
+    </h4>
+    <p class="lead mb-4" style="color: #00e5ff; text-shadow: 0 0 4px #00e5ff;">
+      For the price of half a coffee, you’re keeping one dev going.
+    </p>
+    <p class="text-white-50 mb-0">
+      I’m just one developer — no team, no funding, no corporate backing. Everything here is built, maintained, and paid for by me.
+      If you enjoy the site or find it useful, even $1 helps cover costs and buys me some breathing room.
+      No guilt — just a tiny thank you if you can spare it.
+    </p>
+    <div id="donate-button" class="d-inline-block mt-4"></div>
+  </div>
+</div>
 
 
-    
-
-
-    <h4 style="font-family: 'Courier New', monospace; color: green;">Help this website keep running! Only $1!</h4>
-    <div id="donate-button-container">
-        <div id="donate-button"></div>
-        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-        <script>
-            PayPal.Donation.Button({
-                env: 'production',
-                hosted_button_id: '63FG57K3EL8NJ',
-                image: {
-                    src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-                    alt: 'Donate with PayPal button',
-                    title: 'PayPal - The safer, easier way to pay online!',
-                }
-            }).render('#donate-button');
-        </script>
-
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
 <script>
-    modSearch.addEventListener("input", function () {
-                    const searchTerm = modSearch.value.toLowerCase();
-
-                    const modItems = document.getElementsByClassName("image-item");
-                    let hasResults = false;
-
-                    for (let i = 0; i < modItems.length; i++) {
-                        const modName = modItems[i].querySelector("h3").innerText.toLowerCase();
-
-                        if (modName.includes(searchTerm)) {
-                            modItems[i].style.display = "block";
-                            hasResults = true;
-                        } else {
-                            modItems[i].style.display = "none";
-                        }
-                    }
-
-                    if (!hasResults) {
-                        noResultsLabel.style.display = "block";
-                    } else {
-                        noResultsLabel.style.display = "none";
-                    }
-                });
-            
+  PayPal.Donation.Button({
+    env: 'production',
+    hosted_button_id: '63FG57K3EL8NJ',
+    image: {
+      src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+      alt: 'Donate with PayPal button',
+      title: 'PayPal - The safer, easier way to pay online!',
+    },
+  }).render('#donate-button');
 </script>
 
 
+<footer>
+    <p>&copy; 2025 SkyLinx. All rights reserved.</p>
+</footer>
 
-
+<script src="Scripts/script.js"></script>
+<script src="Scripts/search.js">
+</script>
 
 </body>
 </html>
