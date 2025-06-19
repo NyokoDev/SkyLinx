@@ -89,6 +89,20 @@ skylinx-image {
   font-weight: bold;
 }
 
+.game-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.image-wrapper img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 .text > h2,
 .text2 > h1 {
   text-align: center;
