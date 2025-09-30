@@ -1,144 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>SkyLinx - Cities Skylines Mods</title>
-    <meta property="og:title" content="SkyLinx - The Mod Resource">
-    <meta property="og:description" content="Mods and Assets for Cities: Skylines.">
-    <meta property="og:image" content="https://i.imgur.com/J4WudTa.png">
-    <meta property="og:url" content="https://nyokodev.github.io/SkyLinx/">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="icon" href="https://i.imgur.com/J4WudTa.png" type="image/png">
-    <link rel="stylesheet" href=".././CSS/styles.css">
-    <link rel="stylesheet" href=".././CSS/preview.css">
-    <link rel="stylesheet" href=".././CS2/CS2Styles.css">
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>SkyLinx - Cities Skylines Mods</title>
+  <meta property="og:title" content="SkyLinx - The Mod Resource">
+  <meta property="og:description" content="Mods and Assets for Cities: Skylines.">
+  <meta property="og:image" content="https://i.imgur.com/J4WudTa.png">
+  <meta property="og:url" content="https://nyokodev.github.io/SkyLinx/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="icon" href="https://i.imgur.com/J4WudTa.png" type="image/png">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/preview.css">
+  <link rel="stylesheet" href="../CS2/CS2Styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background: #0f0f0f;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar { background-color: #000 !important; }
+    .navbar a { color: white; font-weight: 500; }
+    .navbar a:hover { color: #bdcf1d; }
+
+    /* Card styling */
+    .mod-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .mod-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .mod-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    /* Section styling */
+    .section-block {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+
+    .section-block h1 {
+      font-size: clamp(1.5rem, 2.5vw, 3rem);
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .section-block span {
+      color: #bdcf1d;
+    }
+
+    /* Big card for new airlines */
+    .big-card {
+      max-width: 800px;
+    }
+
+    /* Smaller cards side by side */
+    .small-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .small-cards .mod-card {
+      max-width: 350px;
+    }
+  </style>
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-sm bg-db">
-        <div class="container-fluid">
-            <div class="d-flex">
-                <a class="nav-item" href=".././index.html">Mods</a>
-                <a class="nav-item" href=".././support.html">Support</a>
-                
-            </div>
-            <div id="skylinx-nav-logo" class="mx-auto text-center">
-                <div class="navbar-brand position-absolute top-50 start-50 translate-middle">
-                    <img src=".././UI/Skylinxlogowhite.svg"
-                         alt="SkyLinx"
-                         height="50"
-                         width="100"
-                         class="d-inline-block align-top" />
-                </div>
-                <div class="search-bar">
-                    <input type="text" id="modSearch" placeholder="Search for mods...">
-                </div>
-            </div>
-        </div>
-    </nav>
-
-<div class="FeaturedText">
-    <!-- Anchor wrapping the card for link-style behavior -->
-
-    <a href="../Mods/Lumina/Lumina_Landing.html">
-        <div class="Lumina_Card">
-          <img src="../Mods/Lumina/LUMINA_Card.png" alt="Lumina Card">
-        </div>
-      </a>
-      
   
-  <a href="javascript:void(0);" onclick="startPayment()"></a>
-  <!-- Hidden PayPal button container -->
-  <div id="paypal-button-container" style="display: none; text-align: center; padding: 20px; border: 2px solid #000; border-radius: 8px; background-color: #f9f9f9; max-width: 350px; margin: 0 auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
-    <!-- Header Styling -->
-    <h4 style="font-family: 'Sans', monospace; color: #bdcf1d; font-size: 1.5rem; margin-bottom: 15px;">Buy via a Donation (Make sure to note you're buying this product. The product will be emailed to you. If issues contact us at Discord.</h4>
-    
-    <!-- Donation Button Container -->
-    <div id="donate-button-container" style="display: inline-block; padding: 10px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      <div id="donate-button" style="display: flex; justify-content: center;"></div>
-      
-      <!-- PayPal SDK Script -->
-      <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-      <script>
-        PayPal.Donation.Button({
-          env: 'production',  // or 'sandbox' for testing
-          hosted_button_id: '63FG57K3EL8NJ',  // Replace with your hosted button ID
-          image: {
-            src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-            alt: 'Donate with PayPal button',
-            title: 'PayPal - The safer, easier way to pay online!',
-          }
-        }).render('#donate-button');
-      </script>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <div class="d-flex">
+        <a class="nav-item" href="../index.html">Mods</a>
+        <a class="nav-item" href="../support.html">Support</a>
+      </div>
+      <div id="skylinx-nav-logo" class="mx-auto text-center">
+        <div class="navbar-brand position-absolute top-50 start-50 translate-middle">
+          <img src="../UI/Skylinxlogowhite.svg" alt="SkyLinx" height="50" width="100" />
+        </div>
+        <div class="search-bar">
+          <input type="text" id="modSearch" placeholder="Search for mods...">
+        </div>
+      </div>
     </div>
+  </nav>
+
+  <!-- FEATURED MODS -->
+  <div class="section-block small-cards">
+    <a href="../Mods/Lumina/Lumina_Landing.html" class="mod-card">
+      <img src="https://modscontent.paradox-interactive.com/cities_skylines_2/3d6bd320-d4b7-42bc-ab94-516193cec2f3/content/cover.jpg?class=modsui_browse_thumbnail" alt="Lumina Card">
+    </a>
+    <a href="https://mods.paradoxplaza.com/mods/77104/Windows" class="mod-card">
+      <img src="https://modscontent.paradox-interactive.com/cities_skylines_2/539c3720-c897-46a6-b68c-496328f814fe/content/screenshots/Logo.jpg?class=modsui_gallery_screenshot" alt="Render Mastery Card">
+    </a>
   </div>
-  
-  
-  <!-- Include PayPal SDK -->
-  <script src="./Payment/payment.js"></script>
-  
-      
-</div>
+  <h1 class="text-center">Featured Mods: <span>Lumina</span> & <span>Render Mastery</span></h1>
 
-<div class="ParadoxAdvice">
+  <!-- HUGE NEW AIRLINES CARD -->
+  <div class="section-block">
+    <a href="https://mods.paradoxplaza.com/authors/Nyyoko?orderBy=desc&sortBy=best&time=quarter" target="_blank" class="mod-card big-card">
+      <img src="https://modscontent.paradox-interactive.com/cities_skylines_2/ae7bad2d-5564-4bc9-a100-1dac9ef00d7c/content/screenshots/ca6815f1-69ed-11f0-b9a1-8d40575d28f4_26-julio-00-28-15-02.png?class=modsui_gallery_screenshot" alt="New Airlines CS2">
+    </a>
+    <h1>NEW AIRLINES for Cities Skylines 2 <span>— Based on Flight Simulation Models</span></h1>
+  </div>
 
-<a href="https://mods.paradoxplaza.com/games/cities_skylines_2?orderBy=desc&sortBy=best">   <img class="ParadoxAdviceImg"  src=".././CS2/PDXMods-md-onDark-Color1.png" alt="Description of your image" > </a> 
-<h1> Find plenty of other mods at Paradox Mods.</h1>
-</div>
+  <!-- PARADOX MODS GENERAL -->
+  <div class="section-block">
+    <a href="https://mods.paradoxplaza.com/games/cities_skylines_2?orderBy=desc&sortBy=best" class="mod-card">
+      <img src="" alt="Paradox Mods">
+    </a>
+    <h1>Find plenty of other mods at <span>Paradox Mods</span>.</h1>
+  </div>
 
-    </script>
+  <!-- NYYOKO AUTHOR MODS -->
+  <div class="section-block">
+    <a href="https://mods.paradoxplaza.com/authors/Nyyoko?orderBy=desc&sortBy=best&time=quarter" target="_blank" class="mod-card">
+      <img src="../UI/NyyokoMods.png" alt="Nyyoko Mods">
+    </a>
+    <h1>Get more mods on Paradox Mods by <span>Nyyoko</span>.</h1>
+  </div>
 
+  <!-- SEARCH SCRIPT -->
+  <script>
+    const modSearch = document.getElementById("modSearch");
+    const noResultsLabel = document.createElement("div");
+    noResultsLabel.innerText = "No results found.";
+    noResultsLabel.style.display = "none";
+    document.body.appendChild(noResultsLabel);
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7488957148914773"
-            crossorigin="anonymous"></script>
-    <script async src="https://fundingchoicesmessages.google.com/i/pub-7488957148914773?ers=1" nonce="osr_F8wNzA06drl2ClVt6Q"></script>
-    <script nonce="osr_F8wNzA06drl2ClVt6Q">(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
-
-   
-           
-
-
-
-
-    
-
-
-
-        </script>
-
-<script>
     modSearch.addEventListener("input", function () {
-                    const searchTerm = modSearch.value.toLowerCase();
+      const searchTerm = modSearch.value.toLowerCase();
+      const modItems = document.getElementsByClassName("image-item");
+      let hasResults = false;
 
-                    const modItems = document.getElementsByClassName("image-item");
-                    let hasResults = false;
+      for (let i = 0; i < modItems.length; i++) {
+        const modName = modItems[i].querySelector("h3").innerText.toLowerCase();
+        if (modName.includes(searchTerm)) {
+          modItems[i].style.display = "block";
+          hasResults = true;
+        } else {
+          modItems[i].style.display = "none";
+        }
+      }
 
-                    for (let i = 0; i < modItems.length; i++) {
-                        const modName = modItems[i].querySelector("h3").innerText.toLowerCase();
-
-                        if (modName.includes(searchTerm)) {
-                            modItems[i].style.display = "block";
-                            hasResults = true;
-                        } else {
-                            modItems[i].style.display = "none";
-                        }
-                    }
-
-                    if (!hasResults) {
-                        noResultsLabel.style.display = "block";
-                    } else {
-                        noResultsLabel.style.display = "none";
-                    }
-                });
-            
-</script>
-
-
-
-
+      noResultsLabel.style.display = hasResults ? "none" : "block";
+    });
+  </script>
 
 </body>
 </html>
